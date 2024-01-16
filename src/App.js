@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home";
 
 function App() {
   return (
+    // 아래 부분이 html 태그처럼 보이지만, jsx 문법임(xml임) => 따라서, html 문법과 유사하지만 동일하진 않음에 주의
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home/>
     </div>
   );
 }
