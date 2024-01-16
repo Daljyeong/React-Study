@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'; // jsx(js에서 xml 태그를 쓸 수 있게 확장해준 것)를 쓰기 위해 import해줌
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App'; // src > App.js를 의미함
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = ReactDOM.createRoot(document.getElementById('root')); // index.html의 <div id="root"></div>부분을 가져옴
+root.render( // root 안에 App(즉, App.js)을 랜더링해줌
   <React.StrictMode>
     <App />
   </React.StrictMode>
@@ -14,4 +14,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(); // 웹 퍼포먼스를 측정하기 위한 js 라이브러리
